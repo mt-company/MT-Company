@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MT Company</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #000;
+      color: #f5f5f5;
+      direction: rtl;
+    }
+    header {
+      background-color: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header img {
+      height: 60px;
+    }
+    header nav a {
+      color: gold;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to bottom right, #000000, #000);
+    }
+    .hero h1 {
+      font-size: 60px;
+      color: rgb(255, 217, 0);
+    }
+    .hero p {
+      font-size: 20px;
+      color: #ccc;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: gold;
+      border-bottom: 2px solid gold;
+      padding-bottom: 10px;
+    }
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .service-category {
+      border: 1px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .service-category h3 {
+      color: gold;
+      margin-bottom: 10px;
+    }
+    .service-category ul {
+      list-style: none;
+      padding: 0;
+    }
+    .service-category li {
+      margin: 10px 0;
+    }
+    .service-category .images {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+      flex-wrap: nowrap;
+    }
+    .service-category img {
+      width: 50%;
+      max-width: 100%;
+      border: 2px solid gold;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .counter-box {
+      background-color: #111;
+      border: 2px solid gold;
+      border-radius: 10px;
+      padding: 30px 50px;
+      text-align: center;
+    }
+    .counter-box h3 {
+      color: gold;
+      font-size: 36px;
+      margin: 0;
+    }
+    .testimonials {
+      background-color: #111;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    .testimonial-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+    }
+    .testimonial-slider::-webkit-scrollbar {
+      height: 8px;
+    }
+    .testimonial-slider::-webkit-scrollbar-thumb {
+      background: gold;
+      border-radius: 10px;
+    }
+    .testimonial-slider img {
+      height: 200px;
+      width: auto;
+      border-radius: 10px;
+      border: 2px solid #444;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: gold;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="شعار الشركة">
+    <nav>
+      <a href="#about">من نحن</a>
+      <a href="#services">الخدمات</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>MT-COMPANY</h1>
+    <p>Your Way to the Bright Future</p>
+  </section>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>MT هي شركة متخصصة في تعليم البرمجة و الالكترونيات و الانظمة المدمجة و انترنت الاشياء. أسسها المهندس محمود الطوخي عام 2023 بهدف تقديم تعليم عملي و مشاريع احترافية في عالم انترنت الاشياء </p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>خدماتنا</h2>
+
+    <div class="service-category">
+      <h3>كورسات Arduino و IoT</h3>
+      <ul>
+        <li>كورس Arduino من الصفر للاحتراف</li>
+        <li>كورس إنترنت الأشياء باستخدام ESP32</li>
+      </ul>
+      <div class="images">
+        <img src="course1.png" alt="كورس Arduino 1">
+        <img src="course2.png" alt="كورس Arduino 2">
+      </div>
+    </div>
+
+    <div class="service-category">
+      <h3>المشاريع الرائدة في عالم إنترنت الأشياء</h3>
+      <ul>
+        <li>Smart farms</li>
+        
+        
+      </ul>
+      <div class="images">
+        <img src="project1.jpg" alt="مشروع 1">
+       
+      </div>
+    </div>
+
+    <div class="counter">
+      <div class="counter-box">
+        <h3>+300</h3>
+        <p style="color:#ccc; margin-top:5px;">Students</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>آراء طلابنا</h2>
+    <div class="testimonial-slider">
+      <img src="review1.jpg" alt="رأي طالب 1">
+      <img src="review2.jpg" alt="رأي طالب 2">
+      <img src="review3.jpg" alt="رأي طالب 3">
+      <img src="review4.jpg" alt="رأي طالب 4">
+      <img src="review5.jpg" alt="رأي طالب 5">
+  
+    </div>
+  </section>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1BPYG16J7m/" target="_blank">facebook</a>
+    <a href="https://wa.me/201128304396" target="_blank">whatsapp</a>
+    <a href="https://www.instagram.com/mt_company40?igsh=MTRxdmZ1bXdlMmYyNg==" target="_blank">instagram</a>
+  </div>
+
+  <footer>
+    &copy; 2025 MT Company – جميع الحقوق محفوظة
+  </footer>
+</body>
+</html>
